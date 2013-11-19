@@ -10,7 +10,7 @@
  
  
     <js-module src="www/PayPalMobilePGPlugin.js" name="PayPalMobilePGPlugin">
-        <clobbers target="window.PayPalMobile" />
+        <clobbers target="PayPalMobile" />
     </js-module>
  
     <!-- android -->
