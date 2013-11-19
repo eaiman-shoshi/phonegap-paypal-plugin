@@ -16,7 +16,7 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="PayPalMobilePGPlugin">
+            <feature name="PayPalMobile">
                 <param name="android-package" value="com.paypal.android.sdk.phonegap.PayPalMobilePGPlugin"/>
             </feature>
         </config-file>
