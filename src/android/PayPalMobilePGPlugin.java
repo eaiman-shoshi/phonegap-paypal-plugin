@@ -1,4 +1,4 @@
-package com.paypal.android.sdk.phonegap;
+package com.technext.PayPal;
 
 import java.math.BigDecimal;
 
