@@ -9,7 +9,7 @@
     <keywords>phonegap,PayPalMobile</keywords>
  
  
-    <js-module src="www\PayPalMobilePGPlugin.js" name="PayPalMobilePGPlugin">
+    <js-module src="www/PayPalMobilePGPlugin.js" name="PayPalMobilePGPlugin">
         <clobbers target="window.PayPalMobile" />
     </js-module>
  
@@ -51,7 +51,8 @@
             <activity android:name="io.card.payment.DataEntryActivity" />
         </config-file>
  
-        <source-file src="src\android\PayPalMobilePGPlugin.java" target-dir="com/paypal/android/sdk/phonegap" />      
+ 	<source-file src="src/android/PayPalAndroidSDK.jar" target-dir="libs/" />
+        <source-file src="src/android/PayPalMobilePGPlugin.java" target-dir="com/paypal/android/sdk/phonegap" />      
      </platform>          
 	 
 	 <!-- ios -->
@@ -61,8 +62,8 @@
                 <param name="ios-package" value="PayPalMobilePGPlugin" />
             </feature>
         </config-file>
-        <header-file src="src\ios\PayPalMobilePGPlugin.h" />
-        <source-file src="src\ios\PayPalMobilePGPlugin.m" />
+        <header-file src="src/ios/PayPalMobilePGPlugin.h" />
+        <source-file src="src/ios/PayPalMobilePGPlugin.m" />
 
         <framework src="AssetsLibrary.framework" />
         <framework src="MobileCoreServices.framework" />
