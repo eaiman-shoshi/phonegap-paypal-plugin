@@ -52,7 +52,7 @@
         </config-file>
  
  	<source-file src="src/android/PayPalAndroidSDK.jar" target-dir="libs/" />
-        <source-file src="src/android/PayPalMobilePGPlugin.java" target-dir="com/paypal/android/sdk/phonegap" />      
+        <source-file src="src/android/PayPalMobilePGPlugin.java" target-dir="src/com/paypal/android/sdk/phonegap" />      
      </platform>          
 	 
 	 <!-- ios -->
