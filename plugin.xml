@@ -9,7 +9,7 @@
     <keywords>phonegap,PayPalMobile</keywords>
  
  
-    <js-module src="www\PayPalMobilePGPlugin.js" name="PayPalMobile">
+    <js-module src="www\PayPalMobilePGPlugin.js" name="PayPalMobilePGPlugin">
         <clobbers target="window.PayPalMobile" />
     </js-module>
  
@@ -17,18 +17,48 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="PayPalMobile">
-                <param name="android-package" value="com.technext.PayPal.PayPalMobile"/>
+                <param name="android-package" value="com.paypal.android.sdk.phonegap.PayPalMobilePGPlugin"/>
             </feature>
         </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <!-- for card.io card scanning -->
+	    <uses-permission android:name="android.permission.CAMERA" />
+	    <uses-permission android:name="android.permission.VIBRATE" />
+
+	    <!-- for most things, including card.io and paypal -->
+	    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	    <uses-permission android:name="android.permission.INTERNET" />
+
+	    <!-- Camera features -->
+	    <uses-feature android:name="android.hardware.camera" android:required="false" />
+	    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+	    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false"/>
+
+            <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+            <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+            <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+            <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+
+            <activity
+                android:name="io.card.payment.CardIOActivity"
+                android:configChanges="keyboardHidden|orientation" />
+            <activity android:name="io.card.payment.DataEntryActivity" />
+        </config-file>
  
-        <source-file src="src\android\PayPalMobilePGPlugin.java" target-dir="src/com/technext/PayPal" />      
+        <source-file src="src\android\PayPalMobilePGPlugin.java" target-dir="com/paypal/android/sdk/phonegap" />      
      </platform>          
 	 
 	 <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="PayPalMobile">
-                <param name="ios-package" value="PayPalMobile" />
+            <feature name="PayPalMobilePGPlugin">
+                <param name="ios-package" value="PayPalMobilePGPlugin" />
             </feature>
         </config-file>
         <header-file src="src\ios\PayPalMobilePGPlugin.h" />
