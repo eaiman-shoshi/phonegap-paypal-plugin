@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="com.technext.PayPal"
+           id="com.paypal.android.sdk.phonegap"
       version="0.1.0">
     <name>PayPalMobile</name>
     <description>Sample PhoneGap PayPalMobile Plugin</description>
@@ -16,7 +16,7 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="PayPalMobile">
+            <feature name="PayPalMobilePGPlugin">
                 <param name="android-package" value="com.paypal.android.sdk.phonegap.PayPalMobilePGPlugin"/>
             </feature>
         </config-file>
