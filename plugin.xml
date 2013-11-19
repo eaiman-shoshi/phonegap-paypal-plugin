@@ -66,8 +66,8 @@
 	 <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="PayPalMobilePGPlugin">
-                <param name="ios-package" value="PayPalMobilePGPlugin" />
+            <feature name="PayPalMobile">
+            	<param name="ios-package" value="PayPalMobilePGPlugin" />
             </feature>
         </config-file>
         <header-file src="src/ios/PayPalMobilePGPlugin.h" />
