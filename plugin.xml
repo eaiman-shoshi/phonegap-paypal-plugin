@@ -51,7 +51,15 @@
             <activity android:name="io.card.payment.DataEntryActivity" />
         </config-file>
  
- 	<source-file src="src/android/PayPalAndroidSDK.jar" target-dir="libs/" />
+ 	<source-file src="src/android/libs/PayPalAndroidSDK.jar" target-dir="libs/" />
+ 	<source-file src="src/android/libs/armeabi/libcardioDecider.so" target-dir="libs/armeabi/libcardioDecider.so" />
+ 	<source-file src="src/android/libs/armeabi-v7a/libcardioDecider.so" target-dir="libs/armeabi-v7a/libcardioDecider.so" />
+ 	<source-file src="src/android/libs/armeabi-v7a/libcardioRecognizer.so" target-dir="libs/armeabi-v7a/libcardioRecognizer.so" />
+ 	<source-file src="src/android/libs/armeabi-v7a/libcardioRecognizer_tegra2.so" target-dir="libs/armeabi-v7a/libcardioRecognizer_tegra2.so" />
+ 	<source-file src="src/android/libs/armeabi-v7a/libopencv_core.so" target-dir="libs/armeabi-v7a/libopencv_core.so" />
+ 	<source-file src="src/android/libs/armeabi-v7a/libopencv_imgproc.so" target-dir="libs/armeabi-v7a/libopencv_imgproc.so" />
+ 	<source-file src="src/android/libs/mips/libcardioDecider.so" target-dir="libs/mips/libcardioDecider.so" />
+ 	<source-file src="src/android/libs/x86/libcardioDecider.so" target-dir="libs/x86/libcardioDecider.so" />
         <source-file src="src/android/PayPalMobilePGPlugin.java" target-dir="src/com/paypal/android/sdk/phonegap" />      
      </platform>          
 	 
