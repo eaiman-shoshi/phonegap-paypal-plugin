@@ -73,7 +73,20 @@
         <header-file src="src/ios/PayPalMobilePGPlugin.h" />
         <source-file src="src/ios/PayPalMobilePGPlugin.m" />
 
-        <framework src="AssetsLibrary.framework" />
         <framework src="MobileCoreServices.framework" />
+        <framework src="MobileCoreServices.framework" />
+        
+        AVFoundation.framework
+AudioToolbox.framework
+CoreMedia.framework
+CoreVideo.framework
+libxml2.dylib
+MessageUI.framework
+MobileCoreServices.framework
+OpenGLES.framework
+QuartzCore.framework
+Security.framework
+SystemConfiguration.framework
+UIKit.framework
     </platform>
 </plugin>
