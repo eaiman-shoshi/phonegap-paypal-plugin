@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.technext.PayPal"
+      version="0.1.0">
+    <name>PayPalMobile</name>
+    <description>Sample PhoneGap PayPalMobile Plugin</description>
+    <license>MIT</license>
+    <keywords>phonegap,PayPalMobile</keywords>
+ 
+ 
+    <js-module src="www\PayPalMobilePGPlugin.js" name="PayPalMobile">
+        <clobbers target="window.PayPalMobile" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="PayPalMobile">
+                <param name="android-package" value="com.technext.PayPal.PayPalMobile"/>
+            </feature>
+        </config-file>
+ 
+        <source-file src="src\android\PayPalMobilePGPlugin.java" target-dir="src/com/technext/PayPal" />      
+     </platform>          
+	 
+	 <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PayPalMobile">
+                <param name="ios-package" value="PayPalMobile" />
+            </feature>
+        </config-file>
+        <header-file src="src\ios\PayPalMobilePGPlugin.h" />
+        <source-file src="src\ios\PayPalMobilePGPlugin.m" />
+
+        <framework src="AssetsLibrary.framework" />
+        <framework src="MobileCoreServices.framework" />
+    </platform>
+</plugin>
