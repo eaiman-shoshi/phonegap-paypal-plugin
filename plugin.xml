@@ -73,18 +73,18 @@
         <header-file src="src/ios/PayPalMobilePGPlugin.h" />
         <source-file src="src/ios/PayPalMobilePGPlugin.m" />
 
-        <framework src="AVFoundation.framework" />
-        <framework src="AudioToolbox.framework" />
-        <framework src="CoreMedia.framework" />
-        <framework src="CoreVideo.framework" />
-        <framework src="libxml2.dylib" />
-        <framework src="MessageUI.framework" />
-        <framework src="MobileCoreServices.framework" />
-        <framework src="OpenGLES.framework" />
-        <framework src="QuartzCore.framework" />
-        <framework src="Security.framework" />
-        <framework src="SystemConfiguration.framework" />
-        <framework src="UIKit.framework" />
+        <framework src="AVFoundation.framework" weak="true"/>
+        <framework src="AudioToolbox.framework" weak="true"/>
+        <framework src="CoreMedia.framework" weak="true"/>
+        <framework src="CoreVideo.framework" weak="true"/>
+        <framework src="libxml2.dylib" weak="true"/>
+        <framework src="MessageUI.framework" weak="true"/>
+        <framework src="MobileCoreServices.framework" weak="true"/>
+        <framework src="OpenGLES.framework" weak="true"/>
+        <framework src="QuartzCore.framework" weak="true"/>
+        <framework src="Security.framework" weak="true"/>
+        <framework src="SystemConfiguration.framework" weak="true"/>
+        <framework src="UIKit.framework" weak="true"/>
 
     </platform>
 </plugin>
