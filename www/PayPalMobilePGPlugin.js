@@ -1,20 +1,26 @@
-//
+	//
 //  PayPalMobilePGPlugin.js
 //
 
-function PayPalPayment(amount, currency, shortDescription) {
-  this.amount = amount;
-  this.currency = currency;
-  this.shortDescription = shortDescription;
-}
+//function PayPalPayment(amount, currency, shortDescription) {
+//  this.amount = amount;
+//  this.currency = currency;
+//  this.shortDescription = shortDescription;
+//}
 
 /**
  * This class exposes the PayPal iOS SDK functionality to javascript.
  *
  * @constructor
  */
-var PayPalMobile = function () {}
+function PayPalMobile() {}
 
+
+PayPalMobile.prototype.PayPalPayment = function(amount, currency, shortDescription) {
+	  this.amount = amount;
+	  this.currency = currency;
+	  this.shortDescription = shortDescription;
+};
 
 /**
  * Retrieve the version of the PayPal iOS SDK library. Useful when contacting support.
@@ -94,6 +100,13 @@ PayPalMobile.prototype.presentPaymentUI = function(clientId, email, payerId, pay
 /**
  * Plugin setup boilerplate.
  */
+cordova.addConstructor(function() {
+  if (!window.plugins) {
+    window.plugins = {};
+  }
 
-
+  if (!window.plugins.PayPalMobile) {
+    window.plugins.PayPalMobile = new PayPalMobile();
+  }
+});
 module.exports = PayPalMobile;
