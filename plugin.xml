@@ -70,8 +70,8 @@
             	<param name="ios-package" value="PayPalMobilePGPlugin" />
             </feature>
         </config-file>
-        <header-file src="src/ios/PayPalMobilePGPlugin.h" target-dir="ios" />
-        <source-file src="src/ios/PayPalMobilePGPlugin.m" target-dir="ios" />
+        <header-file src="src/ios/PayPalMobilePGPlugin.h" />
+        <source-file src="src/ios/PayPalMobilePGPlugin.m" />
 
         <framework src="AVFoundation.framework" weak="true"/>
         <framework src="AudioToolbox.framework" weak="true"/>
