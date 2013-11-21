@@ -10,7 +10,7 @@
  
  
     <js-module src="www/PayPalMobilePGPlugin.js" name="PayPalMobilePGPlugin">
-        <clobbers target="PayPalMobile" />
+        <clobbers target="plugins.PayPalMobile" />
     </js-module>
  
     <!-- android -->
@@ -72,6 +72,11 @@
         </config-file>
         <header-file src="src/ios/PayPalMobilePGPlugin.h" />
         <source-file src="src/ios/PayPalMobilePGPlugin.m" />
+        
+        <source-file src="src/ios/PayPalMobile/libPayPalMobile.a" target-dir="PayPalMobile" framework="true" />
+        <header-file src="src/ios/PayPalMobile/PayPalMobile.h" target-dir="PayPalMobile" />
+        <header-file src="src/ios/PayPalMobile/PayPalPayment.h" target-dir="PayPalMobile" />
+        <header-file src="src/ios/PayPalMobile/PayPalPaymentViewController.h" target-dir="PayPalMobile" />
 
         <framework src="AVFoundation.framework" weak="true"/>
         <framework src="AudioToolbox.framework" weak="true"/>
