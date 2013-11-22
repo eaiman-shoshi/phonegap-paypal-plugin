@@ -70,13 +70,15 @@
             	<param name="ios-package" value="PayPalMobilePGPlugin" />
             </feature>
         </config-file>
+        
         <header-file src="src/ios/PayPalMobilePGPlugin.h" />
         <source-file src="src/ios/PayPalMobilePGPlugin.m" />
         
-        <source-file src="src/ios/PayPalMobile/libPayPalMobile.a" framework="true" target-dir="PayPalMobile" compiler-flags="-lc++ -ObjC"/>
-        <header-file src="src/ios/PayPalMobile/PayPalMobile.h" target-dir="PayPalMobile" />
-        <header-file src="src/ios/PayPalMobile/PayPalPayment.h" target-dir="PayPalMobile" />
-        <header-file src="src/ios/PayPalMobile/PayPalPaymentViewController.h" target-dir="PayPalMobile" />
+        <source-file src="src/ios/PayPalMobile/libPayPalMobile.a" framework="true" target-dir="PayPalMobile/" 
+        	compiler-flags="-lc++" compiler-flags="-ObjC"/>
+        <header-file src="src/ios/PayPalMobile/PayPalMobile.h" target-dir="PayPalMobile/" />
+        <header-file src="src/ios/PayPalMobile/PayPalPayment.h" target-dir="PayPalMobile/" />
+        <header-file src="src/ios/PayPalMobile/PayPalPaymentViewController.h" target-dir="PayPalMobile/" />
 
         <framework src="AVFoundation.framework" weak="true"/>
         <framework src="AudioToolbox.framework" weak="true"/>
