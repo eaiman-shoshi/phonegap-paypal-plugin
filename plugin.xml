@@ -73,7 +73,7 @@
         <header-file src="src/ios/PayPalMobilePGPlugin.h" />
         <source-file src="src/ios/PayPalMobilePGPlugin.m" />
         
-        <source-file src="src/ios/PayPalMobile/libPayPalMobile.a" framework="true" />
+        <source-file src="src/ios/PayPalMobile/libPayPalMobile.a" framework="true" target-dir="PayPalMobile" compiler-flags="-lc++ -ObjC"/>
         <header-file src="src/ios/PayPalMobile/PayPalMobile.h" target-dir="PayPalMobile" />
         <header-file src="src/ios/PayPalMobile/PayPalPayment.h" target-dir="PayPalMobile" />
         <header-file src="src/ios/PayPalMobile/PayPalPaymentViewController.h" target-dir="PayPalMobile" />
