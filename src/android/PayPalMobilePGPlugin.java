@@ -10,6 +10,7 @@ import org.json.JSONObject;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 
 import com.paypal.android.sdk.payments.PayPalPayment;
 import com.paypal.android.sdk.payments.PayPalService;
@@ -92,6 +93,7 @@ public class PayPalMobilePGPlugin extends CordovaPlugin {
 	}
 
 	private void presentPaymentUI(JSONArray args) throws JSONException {
+		//Log.e("presentPaymentUI", "in");
 		if (args.length() != 4) {
 			this.callbackContext
 					.error("presentPaymentUI requires precisely four arguments");
@@ -101,11 +103,17 @@ public class PayPalMobilePGPlugin extends CordovaPlugin {
 		String clientId = args.getString(0);
 		String email = args.getString(1);
 		String payerId = args.getString(2);
-		JSONObject paymentObject = args.getJSONObject(3);
+		JSONArray paymentObject = args.getJSONArray(3);
 
-		String amount = paymentObject.getString("amount");
-		String currency = paymentObject.getString("currency");
-		String shortDescription = paymentObject.getString("shortDescription");
+		String amount = paymentObject.getString(0);
+		String currency = paymentObject.getString(1);
+		String shortDescription = paymentObject.getString(2);
+		//Log.e("clientId", "->"+clientId);
+		//Log.e("email", "->"+email);
+		//Log.e("payerId", "->"+payerId);
+		//Log.e("amount", "->"+amount);
+		//Log.e("currency", "->"+currency);
+		//Log.e("shortDescription", "->"+shortDescription);
 
 		PayPalPayment payment = new PayPalPayment(new BigDecimal(amount),
 				currency, shortDescription);
