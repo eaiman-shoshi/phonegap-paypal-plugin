@@ -1,7 +1,7 @@
 phonegap-paypal-plugin
 ======================
 <h3>Android part is functional, you can use it for Phonegap Android part</h3>
-**(iOS part is under Construction, please don't use it in your project)**
+**(iOS part is under Construction, please don't use it for your project)**
 
 <h3>Installation:</h3>
     cordova plugin add https://github.com/Eaiman/phonegap-paypal-plugin.git
@@ -45,9 +45,9 @@ phonegap-paypal-plugin
 
 A simple paypal phonegap plugin only for android and ios.
 
-    For any questions or information check out: http://www.technextit.com
+For any questions or information check out: http://www.technextit.com
+
     Developer: Eaiman Shoshi
-    Developer contact info:
     Email: coolshoshi.cse@gmail.com
   
 Feel free to use it in your project. And let me know about any issue about this plugin.
