@@ -6,7 +6,8 @@ phonegap-paypal-plugin
 <h3>NOTE:</h3>
     <ul>
     <li>For live mode, you don't need to set any environment or use "PayPalEnvironmentProduction".</li>
-    <li>There are three Environment available. Choices are:
+    <li>There are three Environment available. Choices are:</li>
+    </ul>
       <ul>
       <li>1. PayPalEnvironmentNoNetwork</li>
       <li>2. PayPalEnvironmentSandbox</li>
