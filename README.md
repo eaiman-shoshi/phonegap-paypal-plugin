@@ -22,7 +22,7 @@ phonegap-paypal-plugin
 
 <h3>Code sample:</h3>
 
-          // See PayPalMobilePGPlugin.js for full documentation
+          // See PayPalMobilePGPlugin.js for better understanding
 		  // set environment you want to use
 		  window.plugins.PayPalMobile.setEnvironment("PayPalEnvironmentNoNetwork");
 
