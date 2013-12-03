@@ -1,6 +1,6 @@
 phonegap-paypal-plugin
 ======================
-<h1>**Android part is functional, you can use it for Phonegap Android part**<h1>
+<h3>**Android part is functional, you can use it for Phonegap Android part**</h3>
 **(iOS part is under Construction, please don't use it in your project)**
 
 **NOTE:**
@@ -15,7 +15,7 @@ phonegap-paypal-plugin
        2. http://stackoverflow.com/questions/18980564/what-is-payerid-in-paypal-ios-sdk#18994299
     
 
-<h3>**Code sample:**</h3>
+<h3>Code sample:</h3>
 
              // See PayPalMobilePGPlugin.js for full documentation
 		  // set environment you want to use
