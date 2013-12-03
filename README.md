@@ -3,6 +3,11 @@ phonegap-paypal-plugin
 <h3>Android part is functional, you can use it for Phonegap Android part</h3>
 **(iOS part is under Construction, please don't use it in your project)**
 
+<h3>Installation:</h3>
+    cordova plugin add https://github.com/Eaiman/phonegap-paypal-plugin.git
+    or
+    phonegap local plugin add https://github.com/Eaiman/phonegap-paypal-plugin.git
+
 <h3>NOTE:</h3>
     For live mode, you don't need to set any environment or use "PayPalEnvironmentProduction".
     There are three Environment available. Choices are:
