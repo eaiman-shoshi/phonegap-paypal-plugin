@@ -1,16 +1,25 @@
 phonegap-paypal-plugin
 ======================
-**Android part is functional, you can use it for Phonegap Android part**
+<h1>**Android part is functional, you can use it for Phonegap Android part**<h1>
 **(iOS part is under Construction, please don't use it in your project)**
 
-Code sample:
+**NOTE:**
+    -> For live mode, you don't need to set any environment or use "PayPalEnvironmentProduction".
+    -> There are three Environment available. Choices are:
+      1. PayPalEnvironmentNoNetwork
+      2. PayPalEnvironmentSandbox
+      3. PayPalEnvironmentProduction
+    -> When you call presentPaymentUI() method, you can pass "someuser@somedomain.com" as null.
+       For further information check out these links:
+       1. http://stackoverflow.com/questions/19507904/is-there-any-documentation-on-what-if-any-controls-we-have-over-the-sdk#19552043
+       2. http://stackoverflow.com/questions/18980564/what-is-payerid-in-paypal-ios-sdk#18994299
+    
 
-                  // See PayPalMobilePGPlugin.js for full documentation
+<h3>**Code sample:**</h3>
+
+             // See PayPalMobilePGPlugin.js for full documentation
 		  // set environment you want to use
 		  window.plugins.PayPalMobile.setEnvironment("PayPalEnvironmentNoNetwork");
-
-		  // create a PayPalPayment object, usually you would pass parameters dynamically
-		  var payment = window.plugins.PayPalMobile.PayPalPayment("1.99", "USD", "Awesome saws");
 
 		  // define a callback when payment has been completed
 		  var completionCallback = function(proofOfPayment) {
@@ -25,9 +34,9 @@ Code sample:
 		  }
 
 		  // launch UI, the PayPal UI will be present on screen until user cancels it or payment completed
-		  window.plugins.PayPalMobile.presentPaymentUI("YOUR_CLIENT_ID", "YOUR_PAYPAL_EMAIL_ADDRESS",    "someuser@somedomain.com", payment, completionCallback, cancelCallback);
+		  window.plugins.PayPalMobile.presentPaymentUI("YOUR_CLIENT_ID", "YOUR_PAYPAL_EMAIL_ADDRESS",    "someuser@somedomain.com", ["1.99", "USD", "Awesome saws"], completionCallback, cancelCallback);
 
-A simple paypal phonegap plugin only for android and ios
+A simple paypal phonegap plugin only for android and ios.
 
 For any questions or information check out: http://www.technextit.com
 
