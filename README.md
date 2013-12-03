@@ -4,23 +4,15 @@ phonegap-paypal-plugin
 **(iOS part is under Construction, please don't use it in your project)**
 
 <h3>NOTE:</h3>
-    <ul>
-    <li>For live mode, you don't need to set any environment or use "PayPalEnvironmentProduction".</li>
-    <li>There are three Environment available. Choices are:</li>
-    </ul>
-      <ul>
-      <li>1. PayPalEnvironmentNoNetwork</li>
-      <li>2. PayPalEnvironmentSandbox</li>
-      <li>3. PayPalEnvironmentProduction</li>
-      </ul>
-    <li>When you call presentPaymentUI() method, you can pass "someuser@somedomain.com" as null.
-      <ul>
-       <li>For further information check out these links:</li>
-       <li>1. http://stackoverflow.com/questions/19507904/is-there-any-documentation-on-what-if-any-controls-we-have-over-the-sdk#19552043</li>
-       <li>2. http://stackoverflow.com/questions/18980564/what-is-payerid-in-paypal-ios-sdk#18994299</li>
-       </ul>
-    </li>   
-    </ul>
+    For live mode, you don't need to set any environment or use "PayPalEnvironmentProduction".
+    There are three Environment available. Choices are:
+      1. PayPalEnvironmentNoNetwork
+      2. PayPalEnvironmentSandbox
+      3. PayPalEnvironmentProduction
+    When you call presentPaymentUI() method, you can pass "someuser@somedomain.com" as null.
+    For further information check out these links:
+      1. http://stackoverflow.com/questions/19507904/is-there-any-documentation-on-what-if-any-controls-we-have-over-the-sdk#19552043
+      2. http://stackoverflow.com/questions/18980564/what-is-payerid-in-paypal-ios-sdk#18994299
     
 
 <h3>Code sample:</h3>
