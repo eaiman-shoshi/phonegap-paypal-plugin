@@ -45,10 +45,10 @@ phonegap-paypal-plugin
 
 A simple paypal phonegap plugin only for android and ios.
 
-For any questions or information check out: http://www.technextit.com
-Developer: Eaiman Shoshi
-Developer contact info:
-  Email: coolshoshi.cse@gmail.com
+    For any questions or information check out: http://www.technextit.com
+    Developer: Eaiman Shoshi
+    Developer contact info:
+    Email: coolshoshi.cse@gmail.com
   
 Feel free to use it in your project. And let me know about any issue about this plugin.
 
