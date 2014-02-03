@@ -47,7 +47,8 @@ A simple paypal phonegap plugin only for android and ios.
 
 For any questions or information check out: http://www.technextit.com
 
-    Developer: Eaiman Shoshi
+    Developer (Android): Eaiman Shoshi
+    Developer (iOS): Ashraful Prium
     Email: coolshoshi.cse@gmail.com
   
 Feel free to use it in your project. And let me know about any issue about this plugin.
