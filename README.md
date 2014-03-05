@@ -1,5 +1,6 @@
 phonegap-paypal-plugin
 ======================
+<h1><s>Not under maintanance</s></h1>
 <h3>Android part is functional, you can use it for Phonegap Android part</h3>
 **(iOS part is under Construction, please don't use it for your project)**
 
